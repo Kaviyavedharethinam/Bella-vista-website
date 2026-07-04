@@ -688,3 +688,143 @@ form textarea {
     }
 
 }
+/* ==============================
+   CONFIGURATION SECTION
+============================== */
+
+.configuration-section{
+    padding:50px 20px;
+    background:#f4f4f4;
+}
+
+.configuration-section h2{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:30px;
+    color:#222;
+}
+
+.price-banner{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
+}
+
+.market-price,
+.svf-price{
+    width:260px;
+    padding:18px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.market-price{
+    background:#ffffff;
+    border:1px solid #d8d8d8;
+}
+
+.market-price span{
+    display:block;
+    color:#666;
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+.market-price h3{
+    font-size:24px;
+    color:#777;
+    text-decoration:line-through;
+}
+
+.svf-price{
+    background:#6d6d6d;
+    color:#fff;
+}
+
+.svf-price span{
+    display:block;
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+.svf-price h3{
+    font-size:28px;
+}
+
+.table-title{
+    text-align:center;
+    margin:20px 0;
+    font-size:26px;
+    color:#222;
+}
+
+.price-table{
+    width:100%;
+    border-collapse:collapse;
+    background:#fff;
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.price-table th{
+    background:#6d6d6d;
+    color:#fff;
+    padding:14px;
+    font-size:16px;
+}
+
+.price-table td{
+    padding:14px;
+    text-align:center;
+    border-bottom:1px solid #ececec;
+    font-size:15px;
+}
+
+.price-table tr:last-child td{
+    border-bottom:none;
+}
+
+.available{
+    color:#1d8d3c;
+    font-weight:bold;
+}
+
+.price-note{
+    margin-top:15px;
+    text-align:center;
+    color:#666;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+.price-banner{
+    flex-direction:column;
+    align-items:center;
+}
+
+.market-price,
+.svf-price{
+    width:100%;
+    max-width:320px;
+}
+
+.price-table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.configuration-section h2{
+    font-size:28px;
+}
+
+.table-title{
+    font-size:22px;
+}
+
+}
